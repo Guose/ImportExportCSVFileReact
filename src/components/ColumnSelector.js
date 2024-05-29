@@ -29,7 +29,7 @@ const ColumnSelector = ({ columns, setColumns }) => {
 
   return (
     <div className="column-selector">
-      <div className="container">
+      <div className="container-columns">
         <h3>Available Columns</h3>
         <ul>
           {leftColumns.map(col => (
@@ -42,7 +42,7 @@ const ColumnSelector = ({ columns, setColumns }) => {
       <div className="buttons">
         <button onClick={moveAllRight}>{'>>'}</button>
       </div>
-      <div className="container">
+      <div className="container-selected">
         <h3>Selected Columns</h3>
         <ul>
           {rightColumns.map(col => (
